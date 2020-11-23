@@ -1,0 +1,28 @@
+{
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": [
+    "jest-extended"
+  ],
+  "coverageDirectory": "<rootDir>/coverage",
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "json"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+  ],
+  "testMatch": [
+    "**/*.test.(ts|js)"
+  ],
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "tsconfig.json"
+    }
+  }
+}
