@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots SearchField Default 1`] = `
+<div
+  className="makeStyles-root-1 css-2b097c-container"
+  onKeyDown={[Function]}
+>
+  <div
+    className=" css-yk16xz-control"
+    onMouseDown={[Function]}
+    onTouchEnd={[Function]}
+  >
+    <div
+      className=" css-g1d714-ValueContainer"
+    >
+      <div
+        className=" css-1wa3eu0-placeholder"
+      >
+        Select...
+      </div>
+      <div
+        className="css-b8ldur-Input"
+      >
+        <div
+          className=""
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <input
+            aria-autocomplete="list"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            disabled={false}
+            id="react-select-2-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            spellCheck="false"
+            style={
+              Object {
+                "background": 0,
+                "border": 0,
+                "boxSizing": "content-box",
+                "color": "inherit",
+                "fontSize": "inherit",
+                "label": "input",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "1px",
+              }
+            }
+            tabIndex="0"
+            type="text"
+            value=""
+          />
+          <div
+            style={
+              Object {
+                "height": 0,
+                "left": 0,
+                "overflow": "scroll",
+                "position": "absolute",
+                "top": 0,
+                "visibility": "hidden",
+                "whiteSpace": "pre",
+              }
+            }
+          >
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" css-1hb7zxy-IndicatorsContainer"
+    >
+      <span
+        className=" css-1okebmr-indicatorSeparator"
+      />
+      <div
+        aria-hidden="true"
+        className=" css-tlfecz-indicatorContainer"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="css-6q0nyr-Svg"
+          focusable="false"
+          height={20}
+          viewBox="0 0 20 20"
+          width={20}
+        >
+          <path
+            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SearchItem Empty 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      
+    </p>
+  </div>
+</li>
+`;
+
+exports[`Storyshots SearchItem With All Data 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle"
+    >
+      <img
+        className="MuiAvatar-img"
+        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      Star Wars: Episode IV - A New Hope
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      1977 | movie
+    </p>
+  </div>
+</li>
+`;
+
+exports[`Storyshots SearchItem Without Poster 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      Star Wars: Episode IV - A New Hope
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      1977 | movie
+    </p>
+  </div>
+</li>
+`;
+
+exports[`Storyshots SearchItem Without Type 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle"
+    >
+      <img
+        className="MuiAvatar-img"
+        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      Star Wars: Episode IV - A New Hope
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      1977
+    </p>
+  </div>
+</li>
+`;
+
+exports[`Storyshots SearchItem Without Year 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circle"
+    >
+      <img
+        className="MuiAvatar-img"
+        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      Star Wars: Episode IV - A New Hope
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      movie
+    </p>
+  </div>
+</li>
+`;

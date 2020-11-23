@@ -1,17 +1,13 @@
 import React from 'react'
 
-export interface indexProps {
+import { useMovieSearch } from '../hooks/api/movieSearch/useMovieSearch'
+
+export interface IndexProps {
   [key: string]: any,
 }
 
-export const IndexPage = (props: indexProps) => {
-  const [data, setData] = React.useState({})
-
-  React.useEffect(() => {
-    fetch('/api?title=star&year=2018')
-      .then((r)=> r.json())
-      .then(setData)
-  }, [])
+export const IndexPage = (props: IndexProps) => {
+  const [{ data, loading, error }, search] = useMovieSearch()
 
   return (
     <div>
