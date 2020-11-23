@@ -7,6 +7,7 @@ export interface IndexProps {
 }
 
 export const IndexPage = (props: IndexProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [{ data, loading, error }, search] = useMovieSearch()
 
   return (
