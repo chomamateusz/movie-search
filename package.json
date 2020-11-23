@@ -17,6 +17,8 @@
     "docker:deploy": "npm run docker && npm run docker:push"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "axios-hooks": "^2.2.0",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

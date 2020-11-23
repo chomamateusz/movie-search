@@ -1,15 +1,23 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React from 'react'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export interface indexProps {
+  [key: string]: any,
+}
+
+export const IndexPage = (props: indexProps) => {
+  const [data, setData] = React.useState({})
+
+  React.useEffect(() => {
+    fetch('/api?title=star&year=2018')
+      .then((r)=> r.json())
+      .then(setData)
+  }, [])
+
+  return (
+    <div>
+      {JSON.stringify(data)}
+    </div>
+  )
+}
 
 export default IndexPage
