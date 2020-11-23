@@ -11,7 +11,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
+    "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "docker": "docker build . -t $T:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
+    "docker:push": "docker push $T:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
+    "docker:deploy": "npm run docker && npm run docker:push"
   },
   "dependencies": {
     "next": "latest",
