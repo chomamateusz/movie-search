@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 
 import SearchItem, { SearchItemProps } from './SearchItem'
 
-import { sampleData } from '../../../hooks/api/movieSearch'
+import { sampleData } from '../../../types/api/movies'
 
 const movie = sampleData[0]
 
@@ -23,6 +23,15 @@ WithoutPoster.args = {
   title: movie.Title,
   year: movie.Year,
   type: movie.Type,
+}
+
+export const WithoutPoster2 = Template.bind({})
+WithoutPoster.args = {
+  ...WithoutPoster.args,
+  title: movie.Title,
+  year: movie.Year,
+  type: movie.Type,
+  posterSrc: 'N/A',
 }
 
 export const WithoutYear = Template.bind({})

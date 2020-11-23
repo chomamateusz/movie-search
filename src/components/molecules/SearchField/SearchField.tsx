@@ -1,23 +1,27 @@
 import React from 'react'
 
-import Select, { Props as SelectProps } from 'react-select'
+import { TextField, TextFieldProps, InputAdornment } from '@material-ui/core'
+import { Search } from '@material-ui/icons'
 
-import { makeStyles } from '@material-ui/core'
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface SearchFieldProps extends SelectProps {}
-
-const useStyles = makeStyles((theme) => ({
-  root: {},
-}))
+export type SearchFieldProps = TextFieldProps
 
 export const SearchField = (props: SearchFieldProps) => {
-  const classes = useStyles(props)
   const { ...otherProps } = props
 
   return (
-    <Select
-      className={classes.root}
+    <TextField
+      variant={'outlined'}
+      fullWidth={true}
+      placeholder={'Type to search...'}
+      InputProps={{
+        endAdornment: (
+          <InputAdornment position={'end'}>
+            <Search
+              color={'disabled'}
+            />
+          </InputAdornment>
+        ),
+      }}
       {...otherProps}
     />
   )

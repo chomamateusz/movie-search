@@ -1,121 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots EmptyState Default 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root makeStyles-iconRoot-2 makeStyles-iconRoot-3 MuiSvgIcon-colorDisabled"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+    />
+  </svg>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle1"
+  >
+    Default...
+  </h6>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle2"
+  >
+    ...is error!
+  </h6>
+</div>
+`;
+
+exports[`Storyshots EmptyState Empty 1`] = `
+<div
+  className="makeStyles-root-4"
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root makeStyles-iconRoot-5 makeStyles-iconRoot-6 MuiSvgIcon-colorDisabled"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M20 19.59V8l-6-6H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.8.52-1.74.83-2.76.83-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.02-.31 1.96-.83 2.75L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"
+    />
+  </svg>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle1"
+  >
+    Nothing was found!
+  </h6>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle2"
+  >
+    Maybe it is a misspell?
+  </h6>
+</div>
+`;
+
 exports[`Storyshots SearchField Default 1`] = `
 <div
-  className="makeStyles-root-1 css-2b097c-container"
-  onKeyDown={[Function]}
+  className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
 >
   <div
-    className=" css-yk16xz-control"
-    onMouseDown={[Function]}
-    onTouchEnd={[Function]}
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+    onClick={[Function]}
   >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+      disabled={false}
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Type to search..."
+      required={false}
+      type="text"
+    />
     <div
-      className=" css-g1d714-ValueContainer"
+      className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
     >
-      <div
-        className=" css-1wa3eu0-placeholder"
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorDisabled"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        Select...
-      </div>
-      <div
-        className="css-b8ldur-Input"
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+    </div>
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
+      style={
+        Object {
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <legend
+        className="PrivateNotchedOutline-legend-8"
+        style={
+          Object {
+            "width": 0.01,
+          }
+        }
       >
-        <div
-          className=""
-          style={
+        <span
+          dangerouslySetInnerHTML={
             Object {
-              "display": "inline-block",
+              "__html": "&#8203;",
             }
           }
-        >
-          <input
-            aria-autocomplete="list"
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect="off"
-            disabled={false}
-            id="react-select-2-input"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            spellCheck="false"
-            style={
-              Object {
-                "background": 0,
-                "border": 0,
-                "boxSizing": "content-box",
-                "color": "inherit",
-                "fontSize": "inherit",
-                "label": "input",
-                "opacity": 1,
-                "outline": 0,
-                "padding": 0,
-                "width": "1px",
-              }
-            }
-            tabIndex="0"
-            type="text"
-            value=""
-          />
-          <div
-            style={
-              Object {
-                "height": 0,
-                "left": 0,
-                "overflow": "scroll",
-                "position": "absolute",
-                "top": 0,
-                "visibility": "hidden",
-                "whiteSpace": "pre",
-              }
-            }
-          >
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className=" css-1hb7zxy-IndicatorsContainer"
-    >
-      <span
-        className=" css-1okebmr-indicatorSeparator"
-      />
-      <div
-        aria-hidden="true"
-        className=" css-tlfecz-indicatorContainer"
-        onMouseDown={[Function]}
-        onTouchEnd={[Function]}
-      >
-        <svg
-          aria-hidden="true"
-          className="css-6q0nyr-Svg"
-          focusable="false"
-          height={20}
-          viewBox="0 0 20 20"
-          width={20}
-        >
-          <path
-            d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-          />
-        </svg>
-      </div>
-    </div>
+        />
+      </legend>
+    </fieldset>
   </div>
 </div>
 `;
 
 exports[`Storyshots SearchItem Empty 1`] = `
-<li
-  className="MuiListItem-root MuiListItem-gutters"
-  disabled={false}
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
 >
   <div
     className="MuiListItemAvatar-root"
   >
     <div
-      className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
     >
       <svg
         aria-hidden={true}
@@ -143,24 +169,108 @@ exports[`Storyshots SearchItem Empty 1`] = `
       
     </p>
   </div>
-</li>
+</div>
 `;
 
 exports[`Storyshots SearchItem With All Data 1`] = `
-<li
-  className="MuiListItem-root MuiListItem-gutters"
-  disabled={false}
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
 >
   <div
     className="MuiListItemAvatar-root"
   >
     <div
-      className="MuiAvatar-root MuiAvatar-circle"
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
     >
-      <img
-        className="MuiAvatar-img"
-        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": "40px",
+            "paddingTop": "calc(1 / 1 * 100%)",
+            "position": "relative",
+            "width": "40px",
+          }
+        }
+      >
+        <img
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+          style={
+            Object {
+              "filterBrightness": 0,
+              "filterSaturate": 20,
+              "height": "100%",
+              "left": 0,
+              "objectFit": "inherit",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100%",
+              "justifyContent": "center",
+              "left": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
@@ -177,19 +287,32 @@ exports[`Storyshots SearchItem With All Data 1`] = `
       1977 | movie
     </p>
   </div>
-</li>
+</div>
 `;
 
 exports[`Storyshots SearchItem Without Poster 1`] = `
-<li
-  className="MuiListItem-root MuiListItem-gutters"
-  disabled={false}
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
 >
   <div
     className="MuiListItemAvatar-root"
   >
     <div
-      className="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
     >
       <svg
         aria-hidden={true}
@@ -217,24 +340,161 @@ exports[`Storyshots SearchItem Without Poster 1`] = `
       1977 | movie
     </p>
   </div>
-</li>
+</div>
 `;
 
-exports[`Storyshots SearchItem Without Type 1`] = `
-<li
-  className="MuiListItem-root MuiListItem-gutters"
-  disabled={false}
+exports[`Storyshots SearchItem Without Poster 2 1`] = `
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
 >
   <div
     className="MuiListItemAvatar-root"
   >
     <div
-      className="MuiAvatar-root MuiAvatar-circle"
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
     >
-      <img
-        className="MuiAvatar-img"
-        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SearchItem Without Type 1`] = `
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": "40px",
+            "paddingTop": "calc(1 / 1 * 100%)",
+            "position": "relative",
+            "width": "40px",
+          }
+        }
+      >
+        <img
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+          style={
+            Object {
+              "filterBrightness": 0,
+              "filterSaturate": 20,
+              "height": "100%",
+              "left": 0,
+              "objectFit": "inherit",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100%",
+              "justifyContent": "center",
+              "left": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
@@ -251,24 +511,108 @@ exports[`Storyshots SearchItem Without Type 1`] = `
       1977
     </p>
   </div>
-</li>
+</div>
 `;
 
 exports[`Storyshots SearchItem Without Year 1`] = `
-<li
-  className="MuiListItem-root MuiListItem-gutters"
-  disabled={false}
+<div
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  role="button"
+  tabIndex={0}
 >
   <div
     className="MuiListItemAvatar-root"
   >
     <div
-      className="MuiAvatar-root MuiAvatar-circle"
+      className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
     >
-      <img
-        className="MuiAvatar-img"
-        src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
-      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "height": "40px",
+            "paddingTop": "calc(1 / 1 * 100%)",
+            "position": "relative",
+            "width": "40px",
+          }
+        }
+      >
+        <img
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+          style={
+            Object {
+              "filterBrightness": 0,
+              "filterSaturate": 20,
+              "height": "100%",
+              "left": 0,
+              "objectFit": "inherit",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+              "width": "100%",
+            }
+          }
+        />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100%",
+              "justifyContent": "center",
+              "left": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+              "top": 0,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+            role="progressbar"
+            style={
+              Object {
+                "height": 20,
+                "width": 20,
+              }
+            }
+          >
+            <svg
+              className="MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                cx={44}
+                cy={44}
+                fill="none"
+                r={20.2}
+                strokeWidth={3.6}
+                style={Object {}}
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
@@ -285,5 +629,2065 @@ exports[`Storyshots SearchItem Without Year 1`] = `
       movie
     </p>
   </div>
+</div>
+`;
+
+exports[`Storyshots SearchItemSkeleton Default 1`] = `
+<li
+  className="MuiListItem-root MuiListItem-gutters"
+  disabled={false}
+>
+  <div
+    className="MuiListItemAvatar-root"
+  >
+    <span
+      className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+      style={
+        Object {
+          "height": 40,
+          "width": 40,
+        }
+      }
+    />
+  </div>
+  <div
+    className="MuiListItemText-root MuiListItemText-multiline"
+  >
+    <span
+      className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      <span
+        className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+        style={
+          Object {
+            "height": undefined,
+            "width": undefined,
+          }
+        }
+      />
+    </span>
+    <p
+      className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+    >
+      <span
+        className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+        style={
+          Object {
+            "height": undefined,
+            "width": undefined,
+          }
+        }
+      />
+    </p>
+  </div>
 </li>
+`;
+
+exports[`Storyshots SearchLayout Default 1`] = `
+<div
+  className="makeStyles-root-16"
+>
+  <div
+    className="MuiPaper-root makeStyles-searchBar-17 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      searchBarContent
+    </div>
+  </div>
+  <div
+    className="makeStyles-searchResults-18"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "green",
+        }
+      }
+    >
+      searchResultsContent
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SearchLayout Long Content 1`] = `
+<div
+  className="makeStyles-root-19"
+>
+  <div
+    className="MuiPaper-root makeStyles-searchBar-20 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "red",
+        }
+      }
+    >
+      searchBarContent
+    </div>
+  </div>
+  <div
+    className="makeStyles-searchResults-21"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "green",
+        }
+      }
+    >
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+      <div>
+        lorem ipsum....
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SearchList Default 1`] = `
+<ul
+  className="MuiList-root makeStyles-root-11 MuiList-padding"
+>
+  <li>
+    {"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","imdbID":"tt0076759","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode V - The Empire Strikes Back","Year":"1980","imdbID":"tt0080684","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode VI - Return of the Jedi","Year":"1983","imdbID":"tt0086190","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode VII - The Force Awakens","Year":"2015","imdbID":"tt2488496","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode I - The Phantom Menace","Year":"1999","imdbID":"tt0120915","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode III - Revenge of the Sith","Year":"2005","imdbID":"tt0121766","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode II - Attack of the Clones","Year":"2002","imdbID":"tt0121765","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode VIII - The Last Jedi","Year":"2017","imdbID":"tt2527336","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Rogue One: A Star Wars Story","Year":"2016","imdbID":"tt3748528","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg"}
+  </li>
+  <li>
+    {"Title":"Star Wars: Episode IX - The Rise of Skywalker","Year":"2019","imdbID":"tt2527338","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg"}
+  </li>
+</ul>
+`;
+
+exports[`Storyshots SearchList Render Search Item 1`] = `
+<ul
+  className="MuiList-root makeStyles-root-12 MuiList-padding"
+>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode IV - A New Hope
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        1977 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode V - The Empire Strikes Back
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        1980 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode VI - Return of the Jedi
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        1983 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode VII - The Force Awakens
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2015 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode I - The Phantom Menace
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        1999 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode III - Revenge of the Sith
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2005 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode II - Attack of the Clones
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2002 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode VIII - The Last Jedi
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2017 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Rogue One: A Star Wars Story
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2016 | movie
+      </p>
+    </div>
+  </div>
+  <div
+    aria-disabled={false}
+    className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <div
+        className="MuiAvatar-root MuiAvatar-rounded MuiAvatar-colorDefault"
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "height": "40px",
+              "paddingTop": "calc(1 / 1 * 100%)",
+              "position": "relative",
+              "width": "40px",
+            }
+          }
+        >
+          <img
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg"
+            style={
+              Object {
+                "filterBrightness": 0,
+                "filterSaturate": 20,
+                "height": "100%",
+                "left": 0,
+                "objectFit": "inherit",
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "
+        filterBrightness 2250ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        filterSaturate 3000ms cubic-bezier(0.4, 0.0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0.0, 0.2, 1)",
+                "width": "100%",
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100%",
+                "justifyContent": "center",
+                "left": 0,
+                "pointerEvents": "none",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+              role="progressbar"
+              style={
+                Object {
+                  "height": 20,
+                  "width": 20,
+                }
+              }
+            >
+              <svg
+                className="MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+                  cx={44}
+                  cy={44}
+                  fill="none"
+                  r={20.2}
+                  strokeWidth={3.6}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        Star Wars: Episode IX - The Rise of Skywalker
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        2019 | movie
+      </p>
+    </div>
+  </div>
+</ul>
+`;
+
+exports[`Storyshots SearchListSkeleton Default 1`] = `
+<ul
+  className="MuiList-root makeStyles-root-13 MuiList-padding"
+>
+  <li
+    className="MuiListItem-root MuiListItem-gutters"
+    disabled={false}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <span
+        className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      />
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </p>
+    </div>
+  </li>
+  <li
+    className="MuiListItem-root MuiListItem-gutters"
+    disabled={false}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <span
+        className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      />
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </p>
+    </div>
+  </li>
+  <li
+    className="MuiListItem-root MuiListItem-gutters"
+    disabled={false}
+  >
+    <div
+      className="MuiListItemAvatar-root"
+    >
+      <span
+        className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      />
+    </div>
+    <div
+      className="MuiListItemText-root MuiListItemText-multiline"
+    >
+      <span
+        className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </span>
+      <p
+        className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        />
+      </p>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots SearchResults Default 1`] = `
+<div
+  className="makeStyles-root-14"
+>
+  <ul
+    className="MuiList-root makeStyles-root-15 MuiList-padding"
+  >
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+    <li
+      className="MuiListItem-root MuiListItem-gutters"
+      disabled={false}
+    >
+      <div
+        className="MuiListItemAvatar-root"
+      >
+        <span
+          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
+      </div>
+      <div
+        className="MuiListItemText-root MuiListItemText-multiline"
+      >
+        <span
+          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </span>
+        <p
+          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
+        >
+          <span
+            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
+            style={
+              Object {
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          />
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
 `;

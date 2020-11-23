@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { ListItem, ListItemProps, ListItemAvatar, Avatar, ListItemText } from '@material-ui/core'
+import { CircularProgress, ListItem, ListItemProps, ListItemAvatar, Avatar, ListItemText } from '@material-ui/core'
 import { Theaters } from '@material-ui/icons'
+import Image from 'material-ui-image'
 
 export interface SearchItemProps extends ListItemProps {
   title?: string,
@@ -20,17 +21,27 @@ export const SearchItem = (props: SearchItemProps) => {
     ...otherProps
   } = props
 
+  const hasValidPosterSrc = posterSrc && posterSrc !== 'N/A'
+
   return (
-    // @ts-ignore seems to be en error - list item gets props defined in ListItemProps type
     <ListItem
+      // @ts-ignore seems to be en error - list item gets props defined in ListItemProps type
+      button={true}
       {...otherProps}
     >
       <ListItemAvatar>
         <Avatar
-          src={posterSrc}
+          variant={'rounded'}
         >
           {
-            posterSrc ? null : <Theaters />
+            hasValidPosterSrc ?
+              <Image
+                loading={<CircularProgress size={20} />}
+                style={{ width: '40px', height: '40px' }}
+                src={posterSrc}
+              />
+              :
+              <Theaters />
           }
         </Avatar>
       </ListItemAvatar>
