@@ -10,6 +10,10 @@ export const IndexPage = (props: IndexProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [{ data, loading, error }, search] = useMovieSearch()
 
+  React.useEffect(() => {
+    search()
+  }, [])
+
   return (
     <div>
       {JSON.stringify(data)}
