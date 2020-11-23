@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 import { User } from '../interfaces'
 
-type Props = {
-  data: User
+interface Props {
+  data: User,
 }
 
 const ListItem = ({ data }: Props) => (

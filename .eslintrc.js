@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: false
   },
-  ignorePatterns: ["coverage", "dist", "build"],
+  ignorePatterns: ["next-env.d.ts", ".eslintrc.js", "coverage", "dist", "build"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: "./tsconfig.json",

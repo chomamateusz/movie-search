@@ -6,8 +6,8 @@ import { sampleUserData } from '../../utils/sample-data'
 import Layout from '../../components/Layout'
 import List from '../../components/List'
 
-type Props = {
-  items: User[]
+interface Props {
+  items: User[],
 }
 
 const WithStaticProps = ({ items }: Props) => (
