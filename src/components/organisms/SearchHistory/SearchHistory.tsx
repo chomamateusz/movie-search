@@ -55,7 +55,6 @@ export const SearchHistory = (props: SearchHistoryProps) => {
         !isEmpty ?
           <SearchResults
             isLoading={false}
-            hasError={false}
             results={history}
             onItemClicked={onItemClicked}
           />

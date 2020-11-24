@@ -1,18 +1,23 @@
 import React from 'react'
 
 import { useRouter } from 'next/router'
+import dynamic from 'next/dynamic'
 
 import { useDebounce, useUnmount, useLocalStorage } from 'react-use'
 
 import SearchField from '../components/molecules/SearchField'
 import SearchResults from '../components/organisms/SearchResults'
 import SearchLayout from '../components/templates/SearchLayout'
-import SearchHistory from '../components/organisms/SearchHistory'
 
 import { useMovieSearch } from '../hooks/api/movieSearch/useMovieSearch'
 import { useQsParams } from '../hooks/app/useQsParams'
 
 import { SearchResultItem, SearchResultItems, SearchResult } from '../types/api/movies'
+
+const BrowserOnlySearchHistory = dynamic(
+  () => import('../components/organisms/SearchHistory'),
+  { ssr: false },
+)
 
 export interface IndexProps {
   [key: string]: any,
@@ -70,16 +75,15 @@ export const IndexPage = (props: IndexProps) => {
       }
       searchResultsContent={
         title === '' ?
-          <SearchHistory
+          <BrowserOnlySearchHistory
             history={history}
             onItemClicked={goToMovie}
           />
           :
           <SearchResults
-            isLoading={isLoading}
-            hasError={Boolean(error)}
-            errorMessage={error?.message || ''}
+            error={error}
             results={results}
+            isLoading={isLoading}
             onItemClicked={pickResult}
           />
       }

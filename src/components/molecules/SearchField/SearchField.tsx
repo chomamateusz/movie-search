@@ -1,20 +1,16 @@
 import React from 'react'
 
-import { makeStyles, TextField, OutlinedTextFieldProps, InputAdornment } from '@material-ui/core'
-import { Search, Clear } from '@material-ui/icons'
+import dynamic from 'next/dynamic'
+
+import { TextField, OutlinedTextFieldProps, InputAdornment } from '@material-ui/core'
+
+const BrowserOnlyIcon = dynamic(() => import('./Icon'), { ssr: false })
 
 export interface SearchFieldProps extends Omit<OutlinedTextFieldProps, 'variant'> {
   onClearClick?: () => void,
 }
 
-const useStyles = makeStyles((theme) => ({
-  iconClear: {
-    cursor: 'pointer',
-  },
-}))
-
 export const SearchField = (props: SearchFieldProps) => {
-  const classes = useStyles(props)
   const {
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     onClearClick = () => {},
@@ -31,18 +27,10 @@ export const SearchField = (props: SearchFieldProps) => {
       InputProps={{
         endAdornment: (
           <InputAdornment position={'end'}>
-            {
-              value === '' ?
-                <Search
-                  color={'disabled'}
-                />
-                :
-                <Clear
-                  classes={{ root: classes.iconClear}}
-                  color={'disabled'}
-                  onClick={onClearClick}
-                />
-            }
+            <BrowserOnlyIcon
+              type={value === '' ? 'search' : 'clear'}
+              onClick={value === '' ? undefined : onClearClick}
+            />
           </InputAdornment>
         ),
       }}

@@ -10,23 +10,23 @@ import EmptyState from '../../atoms/EmptyState'
 
 export interface SearchResultsProps {
   isLoading?: boolean,
-  hasError?: boolean,
-  errorMessage?: string,
+  error?: Error,
   results?: SearchResultItems,
   onItemClicked?: (item: SearchResultItem) => void,
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
+  root: {
+    height: '100%',
+  },
 }))
 
 export const SearchResults = (props: SearchResultsProps) => {
   const classes = useStyles(props)
   const {
     isLoading = true,
-    hasError = false,
-    errorMessage = '',
     results = [],
+    error,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     onItemClicked = () => {},
     ...otherProps
@@ -38,12 +38,17 @@ export const SearchResults = (props: SearchResultsProps) => {
       {...otherProps}
     >
       {
-        isLoading ?
-          <SearchListSkeleton
-            itemCount={6}
+        error ?
+          <EmptyState
+            message={'Error occurred!'}
+            subMessage={error.message}
           />
           :
-          !hasError && results.length > 0 ?
+          isLoading ?
+            <SearchListSkeleton
+              itemCount={6}
+            />
+            :
             <SearchList
               // @ts-ignore results are checked in hasResults var so they can't be null here
               items={results}
@@ -60,12 +65,6 @@ export const SearchResults = (props: SearchResultsProps) => {
                 )
               }}
             />
-            :
-            <EmptyState
-              message={'Error occurred!'}
-              subMessage={errorMessage}
-            />
-
       }
     </div>
   )
