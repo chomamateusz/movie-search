@@ -3,15 +3,14 @@ import React from 'react'
 import { ListItem, ListItemProps, ListItemAvatar, ListItemText } from '@material-ui/core'
 import { Skeleton } from '@material-ui/lab'
 
-export interface SearchItemSkeletonProps extends ListItemProps {
-  [key: string]: any,
-}
+export type SearchItemSkeletonProps = ListItemProps
 
 export const SearchItemSkeleton = (props: SearchItemSkeletonProps) => {
   const { ...otherProps } = props
 
   return (
-  // @ts-ignore seems to be en error - list item gets props defined in ListItemProps type
+    // @ts-ignore seems to be en error - list item gets props defined in ListItemProps type
+    // https://github.com/mui-org/material-ui/issues/14971
     <ListItem
       {...otherProps}
     >

@@ -9,7 +9,7 @@ export default {
   component: FullScreenLoader,
 } as Meta
 
-const Template: Story = (args: Record<string, any>) => <FullScreenLoader {...args} />
+const Template: Story = (args: Record<string, unknown>) => <FullScreenLoader {...args} />
 
 export const Default = Template.bind({})
 Default.args = {}

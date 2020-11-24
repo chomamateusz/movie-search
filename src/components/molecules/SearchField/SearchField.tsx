@@ -24,6 +24,7 @@ export const SearchField = (props: SearchFieldProps) => {
       fullWidth={true}
       variant={'outlined'}
       placeholder={'Type to search...'}
+      label={'Movie title'}
       InputProps={{
         endAdornment: (
           <InputAdornment position={'end'}>

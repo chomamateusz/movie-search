@@ -13,15 +13,15 @@ import { useMovieSearch } from '../hooks/api/movieSearch/useMovieSearch'
 import { useQsParams } from '../hooks/app/useQsParams'
 
 import { SearchResultItem, SearchResultItems, SearchResult } from '../types/api/movies'
+import ErrorBoundary from '../components/atoms/ErrorBoundary'
 
 const BrowserOnlySearchHistory = dynamic(
   () => import('../components/organisms/SearchHistory'),
   { ssr: false },
 )
 
-export interface IndexProps {
-  [key: string]: any,
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface IndexProps {}
 
 export const IndexPage = (props: IndexProps) => {
   const router = useRouter()
@@ -40,7 +40,6 @@ export const IndexPage = (props: IndexProps) => {
   // DEBOUNCE TITLE CHANGE
   const [, cancel] = useDebounce(
     () => {
-      console.log('DEBOUNCE')
       title && movieSearch({ params: { title } })
     },
     500,
@@ -79,10 +78,16 @@ export const IndexPage = (props: IndexProps) => {
       }
       searchResultsContent={
         title === '' ?
-          <BrowserOnlySearchHistory
-            history={history}
-            onItemClicked={goToMovie}
-          />
+          // history depends on local storage that can be corrupted
+          <ErrorBoundary
+            message={'Error loading history!'}
+            subMessage={'Try to search!'}
+          >
+            <BrowserOnlySearchHistory
+              history={history}
+              onItemClicked={goToMovie}
+            />
+          </ErrorBoundary>
           :
           <SearchResults
             error={error}

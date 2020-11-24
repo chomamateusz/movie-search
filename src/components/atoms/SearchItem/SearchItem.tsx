@@ -26,7 +26,9 @@ export const SearchItem = (props: SearchItemProps) => {
   return (
     <ListItem
       // @ts-ignore seems to be en error - list item gets props defined in ListItemProps type
+      // https://github.com/mui-org/material-ui/issues/14971
       button={true}
+      component={'li'}
       {...otherProps}
     >
       <ListItemAvatar>

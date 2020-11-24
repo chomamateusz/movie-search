@@ -5,7 +5,7 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import theme from '../theme'
 
-class MyDocument extends Document {
+class CustomDocument extends Document {
   public static  getInitialProps = async (ctx: DocumentContext) => {
     const sheets = new ServerStyleSheets()
     const originalRenderPage = ctx.renderPage
@@ -26,7 +26,9 @@ class MyDocument extends Document {
 
   public render() {
     return (
-      <Html>
+      <Html
+        lang={'en'}
+      >
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -37,10 +39,10 @@ class MyDocument extends Document {
           <meta name="msapplication-config" content="browserconfig.xml" />
           <meta name="theme-color" content={theme.palette.primary.main} />
 
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+          <title>Movie Search App</title>
+          <meta name="description" content="Search movies form OMDb API!"/>
         </Head>
         <body>
           <Main />
@@ -51,4 +53,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default CustomDocument

@@ -2,10 +2,9 @@ import React from 'react'
 
 import { makeStyles } from '@material-ui/core'
 
-import Loader from '../../atoms/Loader'
+import Loader, { LoaderProps } from '../../atoms/Loader'
 
-export interface FullScreenLoaderProps {
-  [key: string]: any,
+export interface FullScreenLoaderProps extends LoaderProps {
   isRelative?: boolean,
 }
 

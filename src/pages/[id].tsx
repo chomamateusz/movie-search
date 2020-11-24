@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import EmptyState from '../components/atoms/EmptyState'
@@ -22,28 +23,35 @@ const MoviePage = () => {
     router.prefetch('/')
   })
 
+  const title = (data as MovieItem)?.Title
+
   return (
-    <MoviePageLayout>
-      {
-        error ?
-          <EmptyState
-            message={'Error occurred!'}
-            subMessage={error.message}
-          />
-          :
-          loading ?
-            <MovieCardSkeleton />
+    <>
+      <Head>
+        <title>{title ? `${title} | ` : ''}Movie Search App</title>
+      </Head>
+      <MoviePageLayout>
+        {
+          error ?
+            <EmptyState
+              message={'Error occurred!'}
+              subMessage={error.message}
+            />
             :
-            <div>
-              <GoBackButton
-                fallbackPath={'/'}
-              />
-              <MovieCard
-                movie={data as MovieItem}
-              />
-            </div>
-      }
-    </MoviePageLayout>
+            loading ?
+              <MovieCardSkeleton />
+              :
+              <div>
+                <GoBackButton
+                  fallbackPath={'/'}
+                />
+                <MovieCard
+                  movie={data as MovieItem}
+                />
+              </div>
+        }
+      </MoviePageLayout>
+    </>
   )
 }
 

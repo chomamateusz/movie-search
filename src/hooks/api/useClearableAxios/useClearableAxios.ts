@@ -3,7 +3,7 @@ import React from 'react'
 import { AxiosPromise, AxiosRequestConfig } from 'axios'
 import useAxios, { ResponseValues, RefetchOptions, Options } from 'axios-hooks'
 
-export const useClearableAxios = <TResponse = any, TError = any>(config: AxiosRequestConfig | string, options?: Options): [
+export const useClearableAxios = <TResponse = unknown, TError = unknown>(config: AxiosRequestConfig | string, options?: Options): [
   ResponseValues<TResponse, TError>,
   // eslint-disable-next-line no-shadow
   (config?: AxiosRequestConfig, options?: RefetchOptions) => AxiosPromise<TResponse>,

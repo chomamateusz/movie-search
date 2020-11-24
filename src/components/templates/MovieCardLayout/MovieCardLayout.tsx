@@ -6,7 +6,7 @@ import { makeStyles, Card, CardProps, CardContent, CardMedia } from '@material-u
 export interface MovieCardLayoutProps extends CardProps {
   children: React.ReactNode,
   mediaContent?: React.ReactNode,
-  mediaContentProps?: Record<string, any>,
+  mediaContentProps?: Record<string, unknown>,
 }
 
 const useStyles = makeStyles((theme) => ({

@@ -3,7 +3,6 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core'
 
 export interface MoviePageLayoutProps {
-  [key: string]: any,
   children: React.ReactNode,
 }
 
@@ -19,12 +18,11 @@ const useStyles = makeStyles((theme) => ({
 
 export const MoviePageLayout = (props: MoviePageLayoutProps) => {
   const classes = useStyles(props)
-  const { children, ...otherProps } = props
+  const { children } = props
 
   return (
     <div
       className={classes.root}
-      {...otherProps}
     >
       {children}
     </div>

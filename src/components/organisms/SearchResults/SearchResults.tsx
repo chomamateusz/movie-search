@@ -65,7 +65,6 @@ export const SearchResults = (props: SearchResultsProps) => {
               :
               <>
                 <SearchList
-                // @ts-ignore results are checked in hasResults var so they can't be null here
                   items={results}
                   renderItem={(item) => {
                     return (

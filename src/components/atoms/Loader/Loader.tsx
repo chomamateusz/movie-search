@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { makeStyles, CircularProgress } from '@material-ui/core'
+import { makeStyles, CircularProgress, CircularProgressProps } from '@material-ui/core'
 
-export interface LoaderProps {
-  [key: string]: any,
+export interface LoaderProps extends CircularProgressProps {
+  children?: React.ReactNode,
 }
 
 const useStyles = makeStyles((theme) => ({

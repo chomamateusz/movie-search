@@ -7,23 +7,33 @@ import { ThemeProvider, CssBaseline } from '@material-ui/core'
 import theme from '../theme'
 import FullScreenLoader from '../components/molecules/FullScreenLoader'
 
-interface Props {
+interface CustomAppProps {
   Component: React.Component,
-  store: any,
 }
 
-class MyApp extends App<Props> {
+class CustomApp extends App<CustomAppProps> {
   public state = {
     isRouteLoading: false,
   }
 
-  public componentDidMount() {
+  public async componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
     jssStyles?.parentNode?.removeChild(jssStyles)
 
     Router.events.on('routeChangeStart', () => this.setState({ isRouteLoading: true }))
     Router.events.on('routeChangeComplete', () => this.setState({ isRouteLoading: false }))
+
+    if(typeof window === 'undefined') return
+
+    const WebFont = await import('webfontloader')
+    WebFont.load({
+      google: {
+        families: [
+          'Roboto:300,400,500,700&display=swap',
+        ],
+      },
+    })
   }
 
   public render() {
@@ -31,18 +41,20 @@ class MyApp extends App<Props> {
     const { isRouteLoading } = this.state
 
     return (
-      <ThemeProvider theme={theme}>
-        {
-          isRouteLoading ?
-            <FullScreenLoader />
-            :
-            null
-        }
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <>
+        <ThemeProvider theme={theme}>
+          {
+            isRouteLoading ?
+              <FullScreenLoader />
+              :
+              null
+          }
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </>
     )
   }
 }
 
-export default MyApp
+export default CustomApp

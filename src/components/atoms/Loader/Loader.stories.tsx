@@ -9,7 +9,7 @@ export default {
   component: Loader,
 } as Meta
 
-const Template: Story = (args: Record<string, any>) => <Loader {...args} />
+const Template: Story = (args: Record<string, unknown>) => <Loader {...args} />
 
 export const Default = Template.bind({})
 Default.args = {}

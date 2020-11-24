@@ -54,7 +54,6 @@ export const useMovieSearch = () => {
     clearData()
   }, [clearData])
   const refetch = React.useCallback((config?: AxiosRequestConfig | undefined, options?: RefetchOptions | undefined) => {
-    console.log('refetch')
     clear()
     load(config, options)
   }, [clear, load])

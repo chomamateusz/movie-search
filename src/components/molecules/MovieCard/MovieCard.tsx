@@ -74,10 +74,10 @@ export const MovieCard = (props: MovieCardProps) => {
         variant={'body2'}
         color={'textSecondary'}
         component={'p'}
+        gutterBottom={true}
       >
         {plot}
       </Typography>
-      <br />
       <MovieRatings
         ratings={movie.Ratings}
       />
