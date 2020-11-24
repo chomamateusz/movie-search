@@ -1,46 +1,23 @@
-import React from 'react'
-
-import { AxiosError, AxiosRequestConfig } from 'axios'
-import useAxios, { RefetchOptions } from 'axios-hooks'
-
 import { SearchResult, ErrorResponse } from '../../../types/api/movies/types'
+
+import { useClearableAxios } from '../useClearableAxios'
 
 export const useMovieSearch = () => {
 
-  const [{data: dataFromResponse, loading, error: errorFromResponse}, refetch] = useAxios<SearchResult | ErrorResponse>('/api', { manual: true })
-  const [data, setData] = React.useState<SearchResult | ErrorResponse | null | undefined>(dataFromResponse)
-  React.useEffect(() => {
-    setData(dataFromResponse)
-  }, [dataFromResponse])
-  const [error, setError] = React.useState<AxiosError<any> | Error | null | undefined>(errorFromResponse)
-  React.useEffect(() => {
-    const newError = (
-      errorFromResponse ?
-        errorFromResponse
-        :
-        (
-          (data as ErrorResponse)?.Error ?
-            (new Error((data as ErrorResponse).Error))
-            :
-            null
-        )
-    )
-    setError(newError)
-  }, [data, errorFromResponse])
+  const [{data, loading, error: errorFromResponse, response}, refetch, clear] = useClearableAxios<SearchResult | ErrorResponse>('/api', { manual: true })
+  const error = (
+    errorFromResponse ?
+      errorFromResponse
+      :
+      (
+        (data as ErrorResponse)?.Error ?
+          (new Error((data as ErrorResponse).Error))
+          :
+          undefined
+      )
+  )
 
-  // axios-hooks do not have pos
-  const clear =  React.useCallback(() => {
-    setData(null)
-    setError(null)
-  }, [])
-  // this function seems to be regenerating every render so memoization was needed
-  const refetchMemoized = React.useCallback((config?: AxiosRequestConfig | undefined, options?: RefetchOptions | undefined) => {
-    clear()
-    refetch(config, options)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  return [{data, loading, error}, refetchMemoized, clear] as const
+  return [{data, loading, error, response}, refetch, clear] as const
 
 }
 
