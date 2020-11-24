@@ -41,6 +41,7 @@ export const SearchItem = (props: SearchItemProps) => {
                 loading={<CircularProgress size={20} />}
                 style={{ width: '40px', height: '40px' }}
                 src={posterSrc}
+                alt={title}
               />
               :
               <Theaters />
