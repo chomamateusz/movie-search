@@ -1,12 +1,24 @@
 import useAxios from 'axios-hooks'
 
-import { MovieItem } from '../../../types/api/movie/types'
+import { MovieItem, ErrorResponse } from '../../../types/api/movie/types'
 
 export const useMovie = (id: string) => {
 
-  const result = useAxios<MovieItem>(`/api?id=${id}`)
+  const [{data, loading, error: errorFromResponse}, refetch] = useAxios<MovieItem | ErrorResponse>(`/api?id=${id}`)
 
-  return result
+  const error = (
+    errorFromResponse ?
+      errorFromResponse
+      :
+      (
+        (data as ErrorResponse)?.Error ?
+          (new Error((data as ErrorResponse).Error))
+          :
+          null
+      )
+  )
+
+  return [{data, loading, error}, refetch] as const
 
 }
 

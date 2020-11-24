@@ -31,7 +31,7 @@ export const useQsParams = (defaultParams: Record<string, any>, page: string) =>
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(params)])
 
-  return [params, setParams]
+  return [params, setParams] as const
 }
 
 export default useQsParams

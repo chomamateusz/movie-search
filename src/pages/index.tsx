@@ -18,9 +18,9 @@ export interface IndexProps {
 export const IndexPage = (props: IndexProps) => {
   const router = useRouter()
 
+  // GET AND SET TITLE IN QS
   const [params, setParams] = useQsParams({ search: '' }, '/')
   const setTitle = React.useCallback((newTitle = '') => {
-    // @ts-ignore this function should inherit type from React.useState setter
     setParams({ search: newTitle })
   }, [setParams])
   const title = params.search
@@ -33,29 +33,35 @@ export const IndexPage = (props: IndexProps) => {
   )
   useUnmount(cancel)
 
+  // LOAD SEARCH RESULTS
   const [{ data, loading, error }, search] = useMovieSearch()
   React.useEffect(() => {
     search({ params: { title: debouncedTitle } })
   }, [search, debouncedTitle])
 
+  // PRELOAD MOVIE ROUTE
   React.useEffect(() => {
     router.prefetch('/[id]')
   })
 
   return (
     <SearchLayout
-      searchBarContent={<SearchField
-        value={title}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) => setTitle(event.target.value)}
-      />}
-      searchResultsContent={<SearchResults
-        isLoading={loading}
-        hasError={Boolean(error)}
-        errorMessage={error?.message || ''}
-        results={data?.Search}
-        onItemClicked={({ imdbID }) => router.push('/[id]', `/${imdbID}`)}
-        displayHistory={debouncedTitle === ''}
-      />}
+      searchBarContent={
+        <SearchField
+          value={title}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => setTitle(event.target.value)}
+        />
+      }
+      searchResultsContent={
+        <SearchResults
+          isLoading={loading}
+          hasError={Boolean(error)}
+          errorMessage={error?.message || ''}
+          results={data?.Search}
+          onItemClicked={({ imdbID }) => router.push('/[id]', `/${imdbID}`)}
+          displayHistory={debouncedTitle === ''}
+        />
+      }
     />
   )
 }
