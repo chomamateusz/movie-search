@@ -13,7 +13,6 @@ export interface SearchResultsProps {
   hasError?: boolean,
   errorMessage?: string,
   results?: SearchResultItems | null,
-  displayHistory?: boolean,
   onItemClicked?: (item: SearchResultItem) => void,
 }
 
@@ -26,7 +25,6 @@ export const SearchResults = (props: SearchResultsProps) => {
   const {
     isLoading = true,
     hasError = false,
-    displayHistory = false,
     errorMessage = '',
     results = null,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -48,37 +46,34 @@ export const SearchResults = (props: SearchResultsProps) => {
             subMessage={errorMessage}
           />
           :
-          displayHistory ?
-            'history'
+          isLoading ?
+            <SearchListSkeleton
+              itemCount={6}
+            />
             :
-            isLoading ?
-              <SearchListSkeleton
-                itemCount={6}
+            hasValidResults ?
+              <SearchList
+                // @ts-ignore results are checked in hasValidResults var so they can't be null here
+                items={results}
+                renderItem={(item) => {
+                  return (
+                    <SearchItem
+                      key={item.imdbID}
+                      title={item.Title}
+                      year={item.Year}
+                      type={item.Type}
+                      posterSrc={item.Poster}
+                      onClick={() => onItemClicked(item)}
+                    />
+                  )
+                }}
               />
               :
-              hasValidResults ?
-                <SearchList
-                  // @ts-ignore results are checked in hasValidResults var so they can't be null here
-                  items={results}
-                  renderItem={(item) => {
-                    return (
-                      <SearchItem
-                        key={item.imdbID}
-                        title={item.Title}
-                        year={item.Year}
-                        type={item.Type}
-                        posterSrc={item.Poster}
-                        onClick={() => onItemClicked(item)}
-                      />
-                    )
-                  }}
-                />
-                :
-                <EmptyState
-                  variant={'empty'}
-                  message={'Nothing was found!'}
-                  subMessage={'Maybe it\'s just a misspell?'}
-                />
+              <EmptyState
+                variant={'empty'}
+                message={'Nothing was found!'}
+                subMessage={'Maybe it\'s just a misspell?'}
+              />
       }
     </div>
   )

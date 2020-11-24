@@ -2,14 +2,16 @@ import React from 'react'
 
 import { useRouter } from 'next/router'
 
-import { useDebounce, useUnmount } from 'react-use'
+import { useDebounce, useUnmount, useLocalStorage } from 'react-use'
 
 import SearchField from '../components/molecules/SearchField'
 import SearchResults from '../components/organisms/SearchResults'
 import SearchLayout from '../components/templates/SearchLayout'
+import SearchHistory from '../components/organisms/SearchHistory'
 
 import { useMovieSearch } from '../hooks/api/movieSearch/useMovieSearch'
 import { useQsParams } from '../hooks/app/useQsParams'
+import { SearchResultItem, SearchResultItems } from '../types/api/movies'
 
 export interface IndexProps {
   [key: string]: any,
@@ -33,6 +35,17 @@ export const IndexPage = (props: IndexProps) => {
   )
   useUnmount(cancel)
 
+  // GET AND SET PICKED RESULTS IN LOCALSTORAGE
+  const [history, setHistory] = useLocalStorage<SearchResultItems>('movie-search__picked-results-history', [])
+  const goToMovie = React.useCallback(({ imdbID }: SearchResultItem) => {
+    router.push('/[id]', `/${imdbID}`)
+  }, [router])
+  const pickResult = React.useCallback((pickedResult: SearchResultItem) => {
+    const newHistory = history && history.concat(pickedResult)
+    if(newHistory) setHistory(newHistory)
+    goToMovie(pickedResult)
+  }, [goToMovie, history, setHistory])
+
   // LOAD SEARCH RESULTS
   const [{ data, loading, error }, search] = useMovieSearch()
   React.useEffect(() => {
@@ -53,14 +66,19 @@ export const IndexPage = (props: IndexProps) => {
         />
       }
       searchResultsContent={
-        <SearchResults
-          isLoading={loading}
-          hasError={Boolean(error)}
-          errorMessage={error?.message || ''}
-          results={data?.Search}
-          onItemClicked={({ imdbID }) => router.push('/[id]', `/${imdbID}`)}
-          displayHistory={debouncedTitle === ''}
-        />
+        debouncedTitle ?
+          <SearchResults
+            isLoading={loading}
+            hasError={Boolean(error)}
+            errorMessage={error?.message || ''}
+            results={data?.Search}
+            onItemClicked={pickResult}
+          />
+          :
+          <SearchHistory
+            history={history}
+            onItemClicked={goToMovie}
+          />
       }
     />
   )

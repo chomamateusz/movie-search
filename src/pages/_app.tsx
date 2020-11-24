@@ -12,7 +12,6 @@ interface Props {
   store: any,
 }
 
-
 class MyApp extends App<Props> {
   public state = {
     isRouteLoading: false,
