@@ -1,24 +1,48 @@
 import React from 'react'
 
-import { TextField, TextFieldProps, InputAdornment } from '@material-ui/core'
-import { Search } from '@material-ui/icons'
+import { makeStyles, TextField, OutlinedTextFieldProps, InputAdornment } from '@material-ui/core'
+import { Search, Clear } from '@material-ui/icons'
 
-export type SearchFieldProps = TextFieldProps
+export interface SearchFieldProps extends Omit<OutlinedTextFieldProps, 'variant'> {
+  onClearClick?: () => void,
+}
+
+const useStyles = makeStyles((theme) => ({
+  iconClear: {
+    cursor: 'pointer',
+  },
+}))
 
 export const SearchField = (props: SearchFieldProps) => {
-  const { ...otherProps } = props
+  const classes = useStyles(props)
+  const {
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    onClearClick = () => {},
+    value,
+    ...otherProps
+  } = props
 
   return (
     <TextField
-      variant={'outlined'}
+      value={value}
       fullWidth={true}
+      variant={'outlined'}
       placeholder={'Type to search...'}
       InputProps={{
         endAdornment: (
           <InputAdornment position={'end'}>
-            <Search
-              color={'disabled'}
-            />
+            {
+              value === '' ?
+                <Search
+                  color={'disabled'}
+                />
+                :
+                <Clear
+                  classes={{ root: classes.iconClear}}
+                  color={'disabled'}
+                  onClick={onClearClick}
+                />
+            }
           </InputAdornment>
         ),
       }}

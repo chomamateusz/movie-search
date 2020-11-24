@@ -11,7 +11,8 @@ import SearchHistory from '../components/organisms/SearchHistory'
 
 import { useMovieSearch } from '../hooks/api/movieSearch/useMovieSearch'
 import { useQsParams } from '../hooks/app/useQsParams'
-import { SearchResultItem, SearchResultItems } from '../types/api/movies'
+
+import { SearchResultItem, SearchResultItems, SearchResult } from '../types/api/movies'
 
 export interface IndexProps {
   [key: string]: any,
@@ -20,16 +21,20 @@ export interface IndexProps {
 export const IndexPage = (props: IndexProps) => {
   const router = useRouter()
 
+  // LOAD SEARCH RESULTS
+  const [{ data, loading, error }, movieSearch, clear] = useMovieSearch()
+
   // GET AND SET TITLE IN QS
   const [params, setParams] = useQsParams({ search: '' }, '/')
   const setTitle = React.useCallback((newTitle = '') => {
+    clear()
     setParams({ search: newTitle })
-  }, [setParams])
+  }, [setParams, clear])
   const title = params.search
 
-  const [debouncedTitle, setDebouncedTitle] = React.useState<string>('')
+  // DEBOUNCE TITLE CHANGE
   const [, cancel] = useDebounce(
-    () => setDebouncedTitle(title || ''),
+    () => title && movieSearch({ params: { title } }),
     500,
     [title],
   )
@@ -46,38 +51,36 @@ export const IndexPage = (props: IndexProps) => {
     goToMovie(pickedResult)
   }, [goToMovie, history, setHistory])
 
-  // LOAD SEARCH RESULTS
-  const [{ data, loading, error }, search] = useMovieSearch()
-  React.useEffect(() => {
-    search({ params: { title: debouncedTitle } })
-  }, [search, debouncedTitle])
-
   // PRELOAD MOVIE ROUTE
   React.useEffect(() => {
     router.prefetch('/[id]')
   })
+
+  const results = (data as SearchResult)?.Search
+  const isLoading = loading || (!error && !results && title !== '')
 
   return (
     <SearchLayout
       searchBarContent={
         <SearchField
           value={title}
+          onClearClick={() => setTitle('')}
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => setTitle(event.target.value)}
         />
       }
       searchResultsContent={
-        debouncedTitle ?
-          <SearchResults
-            isLoading={loading}
-            hasError={Boolean(error)}
-            errorMessage={error?.message || ''}
-            results={data?.Search}
-            onItemClicked={pickResult}
-          />
-          :
+        title === '' ?
           <SearchHistory
             history={history}
             onItemClicked={goToMovie}
+          />
+          :
+          <SearchResults
+            isLoading={isLoading}
+            hasError={Boolean(error)}
+            errorMessage={error?.message || ''}
+            results={results}
+            onItemClicked={pickResult}
           />
       }
     />

@@ -1,3 +1,8 @@
+export interface ErrorResponse {
+  Error: string,
+  Response:  'False',
+}
+
 export interface SearchResultItem {
   Title: string,
   Year: string,

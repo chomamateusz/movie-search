@@ -12,7 +12,7 @@ export interface SearchResultsProps {
   isLoading?: boolean,
   hasError?: boolean,
   errorMessage?: string,
-  results?: SearchResultItems | null,
+  results?: SearchResultItems,
   onItemClicked?: (item: SearchResultItem) => void,
 }
 
@@ -26,13 +26,11 @@ export const SearchResults = (props: SearchResultsProps) => {
     isLoading = true,
     hasError = false,
     errorMessage = '',
-    results = null,
+    results = [],
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     onItemClicked = () => {},
     ...otherProps
   } = props
-
-  const hasValidResults = results && Array.isArray(results) && results.length > 0
 
   return (
     <div
@@ -40,40 +38,34 @@ export const SearchResults = (props: SearchResultsProps) => {
       {...otherProps}
     >
       {
-        hasError?
-          <EmptyState
-            message={'Error occurred!'}
-            subMessage={errorMessage}
+        isLoading ?
+          <SearchListSkeleton
+            itemCount={6}
           />
           :
-          isLoading ?
-            <SearchListSkeleton
-              itemCount={6}
+          !hasError && results.length > 0 ?
+            <SearchList
+              // @ts-ignore results are checked in hasResults var so they can't be null here
+              items={results}
+              renderItem={(item) => {
+                return (
+                  <SearchItem
+                    key={item.imdbID}
+                    title={item.Title}
+                    year={item.Year}
+                    type={item.Type}
+                    posterSrc={item.Poster}
+                    onClick={() => onItemClicked(item)}
+                  />
+                )
+              }}
             />
             :
-            hasValidResults ?
-              <SearchList
-                // @ts-ignore results are checked in hasValidResults var so they can't be null here
-                items={results}
-                renderItem={(item) => {
-                  return (
-                    <SearchItem
-                      key={item.imdbID}
-                      title={item.Title}
-                      year={item.Year}
-                      type={item.Type}
-                      posterSrc={item.Poster}
-                      onClick={() => onItemClicked(item)}
-                    />
-                  )
-                }}
-              />
-              :
-              <EmptyState
-                variant={'empty'}
-                message={'Nothing was found!'}
-                subMessage={'Maybe it\'s just a misspell?'}
-              />
+            <EmptyState
+              message={'Error occurred!'}
+              subMessage={errorMessage}
+            />
+
       }
     </div>
   )

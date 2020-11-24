@@ -34,6 +34,8 @@ export const SearchHistory = (props: SearchHistoryProps) => {
     ...otherProps
   } = props
 
+  const isEmpty = history.length === 0
+
   return (
     <div
       className={classes.root}
@@ -47,14 +49,19 @@ export const SearchHistory = (props: SearchHistoryProps) => {
         <History
           className={classes.icon}
         />
-        Search history
+        Search history {isEmpty ? '(EMPTY)' : ''}
       </Typography>
-      <SearchResults
-        isLoading={false}
-        hasError={false}
-        results={history}
-        onItemClicked={onItemClicked}
-      />
+      {
+        !isEmpty ?
+          <SearchResults
+            isLoading={false}
+            hasError={false}
+            results={history}
+            onItemClicked={onItemClicked}
+          />
+          :
+          null
+      }
     </div>
   )
 }
