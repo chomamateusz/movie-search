@@ -52,7 +52,7 @@ export const MovieRatings = (props: MovieRatingsProps) => {
                           size={'small'}
                           defaultValue={calculatedRating.rating as number / 20}
                           max={5}
-                          precision={0.01}
+                          precision={0.1}
                           readOnly={true}
                         />
                         :

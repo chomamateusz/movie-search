@@ -12,6 +12,7 @@ export interface MovieCardLayoutProps extends CardProps {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    width: '100%',
     maxWidth: 960,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
