@@ -10,6 +10,7 @@ RUN yarn install --frozen-lockfile
 COPY next.config.js next.config.js
 
 COPY src src
+COPY public public
 
 RUN npm run build
 
@@ -26,6 +27,7 @@ RUN yarn install --frozen-lockfile --production
 
 COPY --from=builder /app/next.config.js .
 
-COPY --from=builder /app/.next/ /app/next.config.js ./.next/
+COPY --from=builder /app/.next/ ./.next/
+COPY --from=builder /app/public/ ./public/
 
 CMD ["npm", "start"]

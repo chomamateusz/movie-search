@@ -42,7 +42,7 @@ class CustomDocument extends Document {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
           <title>Movie Search App</title>
-          <meta name="description" content="Search movies form OMDb API!"/>
+          <meta name="description" content="Search movies from OMDb API!"/>
         </Head>
         <body>
           <Main />

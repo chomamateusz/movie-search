@@ -1,5 +1,6 @@
 {
-  "name": "with-typescript",
+  "name": "movie-search",
+  "description": "Example movie search app. Search movies from OMDb API!",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -12,8 +13,8 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "docker": "docker build . -t $T:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
-    "docker:push": "docker push $T:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
+    "docker": "docker build . -t chomamateusz/movie-search:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
+    "docker:push": "docker push chomamateusz/movie-search:$(sed -nE 's/^\\s*\"version\": \"(.*?)\",$/\\1/p' package.json)",
     "docker:deploy": "npm run docker && npm run docker:push"
   },
   "dependencies": {
@@ -31,7 +32,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-use": "^15.3.4",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "webpack": "^5.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",
