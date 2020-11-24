@@ -18,13 +18,15 @@ export const useClearableAxios = <TResponse = any, TError = any>(config: AxiosRe
 
   const [useAxiosSate, refetch] = useAxios<TResponse, TError>(config, options)
   const [state, setState] = React.useState<ResponseValues<TResponse, TError>>(initialState)
+
   React.useEffect(() => {
+    // do not update the state if te same error is rolled back form useAxios state
     setState(useAxiosSate)
   }, [useAxiosSate])
 
-  // axios-hooks do not have pos
-  const clear =  React.useCallback(() => {
-    setState(initialState)
+  // axios-hooks do not have possibility to clear whole state
+  const clear = React.useCallback(() => {
+    setState({ ...initialState })
   }, [initialState])
 
   // this function seems to be regenerating every render so memoization was needed
@@ -39,3 +41,5 @@ export const useClearableAxios = <TResponse = any, TError = any>(config: AxiosRe
 }
 
 export default useClearableAxios
+export * from 'axios-hooks'
+export * from 'axios'

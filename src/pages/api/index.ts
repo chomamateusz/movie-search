@@ -10,13 +10,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     if (!API_URL) throw new Error('API is not configured!')
 
-    const { id, title, year } = req.query
+    const { id, title, year, page } = req.query
 
     const { data } = await axios(API_URL, {
       params: {
         i: id,
         s: title,
         y: year,
+        page,
       },
     })
 

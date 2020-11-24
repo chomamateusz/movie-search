@@ -27,7 +27,7 @@ export const IndexPage = (props: IndexProps) => {
   const router = useRouter()
 
   // LOAD SEARCH RESULTS
-  const [{ data, loading, error }, movieSearch, clear] = useMovieSearch()
+  const [{ data, loading, error }, movieSearch, clear, loadMore] = useMovieSearch()
 
   // GET AND SET TITLE IN QS
   const [params, setParams] = useQsParams({ search: '' }, '/')
@@ -39,7 +39,10 @@ export const IndexPage = (props: IndexProps) => {
 
   // DEBOUNCE TITLE CHANGE
   const [, cancel] = useDebounce(
-    () => title && movieSearch({ params: { title } }),
+    () => {
+      console.log('DEBOUNCE')
+      title && movieSearch({ params: { title } })
+    },
     500,
     [title],
   )
@@ -62,7 +65,8 @@ export const IndexPage = (props: IndexProps) => {
   })
 
   const results = (data as SearchResult)?.Search
-  const isLoading = loading || (!error && !results && title !== '')
+  const isLoadingFirstTime = (!results && loading) || (!error && !results && title !== '')
+  const isLoadingMore = results && loading
 
   return (
     <SearchLayout
@@ -83,8 +87,11 @@ export const IndexPage = (props: IndexProps) => {
           <SearchResults
             error={error}
             results={results}
-            isLoading={isLoading}
+            totalResults={Number(data?.totalResults)}
+            isLoadingFirstTime={isLoadingFirstTime}
+            isLoadingMore={isLoadingMore}
             onItemClicked={pickResult}
+            loadMore={() => loadMore({ title })}
           />
       }
     />
