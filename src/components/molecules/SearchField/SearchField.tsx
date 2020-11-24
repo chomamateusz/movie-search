@@ -18,13 +18,24 @@ export const SearchField = (props: SearchFieldProps) => {
     ...otherProps
   } = props
 
+  const ref = React.useRef<HTMLInputElement>()
+  React.useEffect(() => {
+    if(!ref.current) return
+    if(!ref.current.focus) return
+    ref.current.focus()
+  }, [])
+
   return (
     <TextField
       value={value}
       fullWidth={true}
+      autoFocus={true}
       variant={'outlined'}
       placeholder={'Type to search...'}
       label={'Movie title'}
+      InputLabelProps={{
+        shrink: true,
+      }}
       InputProps={{
         endAdornment: (
           <InputAdornment position={'end'}>
