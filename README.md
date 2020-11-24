@@ -1,41 +1,55 @@
-# TypeScript Next.js example
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=chomamateusz_movie-search&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=chomamateusz_movie-search)
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+# Movie Search App
 
-## Deploy your own
+This is an example app that search movies from OMDb API!
 
-Deploy the example using [Vercel](https://vercel.com):
+## Running the project
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+1. Obtain an API key [here](https://omdbapi.com/apikey.aspx)
+2. Set environment variables in `.env.local` file
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+API_URL=https://www.omdbapi.com/?apikey=<YOUR_API_KEY>
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+3. Run app via `yarn dev`.
+4. Or build app using `yarn build` and start using `yarn start`
 
-## Notes
+The API key is not exposed. The OMDb API is called from the backend proxy available on `/api` route.
 
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+## Developing
 
-```
-npm install --save-dev typescript
-```
+App uses TypeScript and is based on [React](https://reactjs.org/) with [NextJS](https://nextjs.org/) as it provides SSR features and nice file based routing.
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+The [next-pwa](https://github.com/shadowwalker/next-pwa) plugin was used to provide better mobile experience.
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+To maintain the structure and order in all files, whole app code is in the `src` folder, all tests are in the `tests` folder and the static assets are in the `public` folder. Moreover, inside the `src` Atomic Design was introduced in `components` folders.
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+All app domain logic is inside the pages components. If the app will grow the `view` folder can be introduced for components with logic that not necessary needs to be whole pages.
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+## Testing and linting
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+App contains unit test for one calculating process and snapshot tests for all reusable components in storybook.
+
+To run tests use `yarn test` or `yarn ci` to run in watch mode.
+
+To run linter use `yarn lint` or `yarn fix` to run linter with `--fix` flag.
+
+To maintain code quality [husky](https://github.com/typicode/husky) is used to lint on precommit and test on prepush.
+
+## Deployment
+
+App is dockerized via two step docker build process introduced to reduce the image size.
+
+To build an image you can use `yarn docker` script. The image has set `chomamateusz/movie-search` and that tag is used to publish it on Docker Hub. Feel free to change the tag in `package.json`.
+
+To publish image use `yarn docker:push` or `docker:deploy` to build and push image at once.
+
+App is deployed on the my VPS K8S cluster now [https://movie-search.ml](https://movie-search.ml).
+
+## Performance
+
+App was tested in Google Lighthouse and scored quite nice results.
+
+Main problem that can't be fixed is the image size and format takt OMDb serves.
