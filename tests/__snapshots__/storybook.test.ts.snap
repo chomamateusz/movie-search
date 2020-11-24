@@ -1,12 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots ButtonLoading Default 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-root-1"
+  disabled={false}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    Click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots ButtonLoading Loading 1`] = `
+<button
+  className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-root-2 Mui-disabled Mui-disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={-1}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  >
+    <div
+      className="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      role="progressbar"
+      style={
+        Object {
+          "height": 14,
+          "width": 14,
+        }
+      }
+    >
+      <svg
+        className="MuiCircularProgress-svg"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+          cx={44}
+          cy={44}
+          fill="none"
+          r={20.2}
+          strokeWidth={3.6}
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </span>
+</button>
+`;
+
 exports[`Storyshots EmptyState Default 1`] = `
 <div
-  className="makeStyles-root-1"
+  className="makeStyles-root-3"
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root makeStyles-iconRoot-2 makeStyles-iconRoot-3 MuiSvgIcon-colorDisabled"
+    className="MuiSvgIcon-root makeStyles-iconRoot-4 makeStyles-iconRoot-5 MuiSvgIcon-colorDisabled"
     focusable="false"
     viewBox="0 0 24 24"
   >
@@ -29,11 +105,11 @@ exports[`Storyshots EmptyState Default 1`] = `
 
 exports[`Storyshots EmptyState Empty 1`] = `
 <div
-  className="makeStyles-root-4"
+  className="makeStyles-root-6"
 >
   <svg
     aria-hidden={true}
-    className="MuiSvgIcon-root makeStyles-iconRoot-5 makeStyles-iconRoot-6 MuiSvgIcon-colorDisabled"
+    className="MuiSvgIcon-root makeStyles-iconRoot-7 makeStyles-iconRoot-8 MuiSvgIcon-colorDisabled"
     focusable="false"
     viewBox="0 0 24 24"
   >
@@ -54,15 +130,44 @@ exports[`Storyshots EmptyState Empty 1`] = `
 </div>
 `;
 
+exports[`Storyshots ErrorBoundary Error Caught 1`] = `
+<div
+  className="makeStyles-root-9"
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root makeStyles-iconRoot-10 makeStyles-iconRoot-11 MuiSvgIcon-colorDisabled"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+    />
+  </svg>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle1"
+  >
+    Error message
+  </h6>
+  <h6
+    className="MuiTypography-root MuiTypography-subtitle2"
+  >
+    
+  </h6>
+</div>
+`;
+
+exports[`Storyshots ErrorBoundary No Error 1`] = `"This text should be shown"`;
+
 exports[`Storyshots FullScreenLoader Default 1`] = `
 <div
-  className="makeStyles-root-18 makeStyles-root-19"
+  className="makeStyles-root-23 makeStyles-root-24"
 >
   <div
-    className="makeStyles-root-20"
+    className="makeStyles-root-25"
   >
     <div
-      className="MuiCircularProgress-root makeStyles-root-20 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      className="MuiCircularProgress-root makeStyles-root-25 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style={
         Object {
@@ -92,7 +197,7 @@ exports[`Storyshots FullScreenLoader Default 1`] = `
 
 exports[`Storyshots GoBackButton Default 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-root-7 MuiButton-fullWidth"
+  className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-root-12 MuiButton-fullWidth"
   disabled={false}
   onBlur={[Function]}
   onClick={[Function]}
@@ -133,10 +238,10 @@ exports[`Storyshots GoBackButton Default 1`] = `
 
 exports[`Storyshots Loader Default 1`] = `
 <div
-  className="makeStyles-root-8"
+  className="makeStyles-root-13"
 >
   <div
-    className="MuiCircularProgress-root makeStyles-root-8 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+    className="MuiCircularProgress-root makeStyles-root-13 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
     role="progressbar"
     style={
       Object {
@@ -165,10 +270,10 @@ exports[`Storyshots Loader Default 1`] = `
 
 exports[`Storyshots MovieCard Default 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root makeStyles-root-23 MuiPaper-elevation1 MuiPaper-rounded"
+  className="MuiPaper-root MuiCard-root makeStyles-root-28 MuiPaper-elevation1 MuiPaper-rounded"
 >
   <div
-    className="MuiCardMedia-root makeStyles-media-22"
+    className="MuiCardMedia-root makeStyles-media-27"
     style={
       Object {
         "backgroundImage": "url(\\"https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg\\")",
@@ -177,7 +282,7 @@ exports[`Storyshots MovieCard Default 1`] = `
     title="Star Wars: Episode IV - A New Hope"
   />
   <div
-    className="MuiCardContent-root makeStyles-content-25"
+    className="MuiCardContent-root makeStyles-content-30"
   >
     <h2
       className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
@@ -185,14 +290,14 @@ exports[`Storyshots MovieCard Default 1`] = `
       Star Wars: Episode IV - A New Hope
     </h2>
     <ul
-      className="MuiList-root makeStyles-list-26 MuiList-dense MuiList-padding"
+      className="MuiList-root makeStyles-list-31 MuiList-dense MuiList-padding"
     >
       <li
-        className="MuiListItem-root makeStyles-item-27 MuiListItem-dense MuiListItem-gutters"
+        className="MuiListItem-root makeStyles-item-32 MuiListItem-dense MuiListItem-gutters"
         disabled={false}
       >
         <div
-          className="MuiListItemText-root makeStyles-text-28 MuiListItemText-dense"
+          className="MuiListItemText-root makeStyles-text-33 MuiListItemText-dense"
         >
           <span
             className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -220,11 +325,11 @@ exports[`Storyshots MovieCard Default 1`] = `
         </div>
       </li>
       <li
-        className="MuiListItem-root makeStyles-item-27 MuiListItem-dense MuiListItem-gutters"
+        className="MuiListItem-root makeStyles-item-32 MuiListItem-dense MuiListItem-gutters"
         disabled={false}
       >
         <div
-          className="MuiListItemText-root makeStyles-text-28 MuiListItemText-dense"
+          className="MuiListItemText-root makeStyles-text-33 MuiListItemText-dense"
         >
           <span
             className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -253,20 +358,19 @@ exports[`Storyshots MovieCard Default 1`] = `
       </li>
     </ul>
     <p
-      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-gutterBottom"
     >
       Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
     </p>
-    <br />
     <ul
-      className="MuiList-root makeStyles-list-29 MuiList-dense MuiList-padding"
+      className="MuiList-root makeStyles-list-34 MuiList-dense MuiList-padding"
     >
       <li
-        className="MuiListItem-root makeStyles-item-30 MuiListItem-dense MuiListItem-gutters"
+        className="MuiListItem-root makeStyles-item-35 MuiListItem-dense MuiListItem-gutters"
         disabled={false}
       >
         <div
-          className="MuiListItemText-root makeStyles-text-31 MuiListItemText-dense"
+          className="MuiListItemText-root makeStyles-text-36 MuiListItemText-dense"
         >
           <span
             className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -1531,11 +1635,11 @@ exports[`Storyshots MovieCard Default 1`] = `
         </div>
       </li>
       <li
-        className="MuiListItem-root makeStyles-item-30 MuiListItem-dense MuiListItem-gutters"
+        className="MuiListItem-root makeStyles-item-35 MuiListItem-dense MuiListItem-gutters"
         disabled={false}
       >
         <div
-          className="MuiListItemText-root makeStyles-text-31 MuiListItemText-dense"
+          className="MuiListItemText-root makeStyles-text-36 MuiListItemText-dense"
         >
           <span
             className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -2800,11 +2904,11 @@ exports[`Storyshots MovieCard Default 1`] = `
         </div>
       </li>
       <li
-        className="MuiListItem-root makeStyles-item-30 MuiListItem-dense MuiListItem-gutters"
+        className="MuiListItem-root makeStyles-item-35 MuiListItem-dense MuiListItem-gutters"
         disabled={false}
       >
         <div
-          className="MuiListItemText-root makeStyles-text-31 MuiListItemText-dense"
+          className="MuiListItemText-root makeStyles-text-36 MuiListItemText-dense"
         >
           <span
             className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4075,23 +4179,23 @@ exports[`Storyshots MovieCard Default 1`] = `
 
 exports[`Storyshots MovieCardLayout Default 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root makeStyles-root-48 MuiPaper-elevation1 MuiPaper-rounded"
+  className="MuiPaper-root MuiCard-root makeStyles-root-55 MuiPaper-elevation1 MuiPaper-rounded"
 >
   <div
-    className="MuiCardMedia-root makeStyles-media-49"
+    className="MuiCardMedia-root makeStyles-media-56"
   />
   <div
-    className="MuiCardContent-root makeStyles-content-50"
+    className="MuiCardContent-root makeStyles-content-57"
   />
 </div>
 `;
 
 exports[`Storyshots MovieCardSkeleton Default 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root makeStyles-root-33 MuiPaper-elevation1 MuiPaper-rounded"
+  className="MuiPaper-root MuiCard-root makeStyles-root-38 MuiPaper-elevation1 MuiPaper-rounded"
 >
   <span
-    className="MuiSkeleton-root MuiSkeleton-rect makeStyles-card-32 MuiSkeleton-pulse"
+    className="MuiSkeleton-root MuiSkeleton-rect makeStyles-card-37 MuiSkeleton-pulse"
     style={
       Object {
         "height": undefined,
@@ -4100,7 +4204,7 @@ exports[`Storyshots MovieCardSkeleton Default 1`] = `
     }
   />
   <div
-    className="MuiCardContent-root makeStyles-content-35"
+    className="MuiCardContent-root makeStyles-content-40"
   >
     <h2
       className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
@@ -4152,14 +4256,14 @@ exports[`Storyshots MovieCardSkeleton Default 1`] = `
 
 exports[`Storyshots MovieDetailsList Default 1`] = `
 <ul
-  className="MuiList-root makeStyles-list-9 MuiList-dense MuiList-padding"
+  className="MuiList-root makeStyles-list-14 MuiList-dense MuiList-padding"
 >
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4187,11 +4291,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4219,11 +4323,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4251,11 +4355,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4283,11 +4387,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4315,11 +4419,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4347,11 +4451,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4379,11 +4483,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4411,11 +4515,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4443,11 +4547,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4475,11 +4579,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4507,11 +4611,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4539,11 +4643,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4571,11 +4675,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4603,11 +4707,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4635,11 +4739,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4667,11 +4771,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4699,11 +4803,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4731,11 +4835,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4763,11 +4867,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4795,11 +4899,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4827,11 +4931,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4859,11 +4963,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4891,11 +4995,11 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-10 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-15 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-11 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-16 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4927,14 +5031,14 @@ exports[`Storyshots MovieDetailsList Default 1`] = `
 
 exports[`Storyshots MovieDetailsList Only Title And Year 1`] = `
 <ul
-  className="MuiList-root makeStyles-list-12 MuiList-dense MuiList-padding"
+  className="MuiList-root makeStyles-list-17 MuiList-dense MuiList-padding"
 >
   <li
-    className="MuiListItem-root makeStyles-item-13 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-18 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-14 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-19 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4962,11 +5066,11 @@ exports[`Storyshots MovieDetailsList Only Title And Year 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-13 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-18 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-14 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-19 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -4998,20 +5102,20 @@ exports[`Storyshots MovieDetailsList Only Title And Year 1`] = `
 
 exports[`Storyshots MoviePageLayout Default 1`] = `
 <div
-  className="makeStyles-root-51"
+  className="makeStyles-root-58"
 />
 `;
 
 exports[`Storyshots MovieRatings Default 1`] = `
 <ul
-  className="MuiList-root makeStyles-list-15 MuiList-dense MuiList-padding"
+  className="MuiList-root makeStyles-list-20 MuiList-dense MuiList-padding"
 >
   <li
-    className="MuiListItem-root makeStyles-item-16 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-21 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-17 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-22 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -6276,11 +6380,11 @@ exports[`Storyshots MovieRatings Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-16 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-21 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-17 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-22 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -7545,11 +7649,11 @@ exports[`Storyshots MovieRatings Default 1`] = `
     </div>
   </li>
   <li
-    className="MuiListItem-root makeStyles-item-16 MuiListItem-dense MuiListItem-gutters"
+    className="MuiListItem-root makeStyles-item-21 MuiListItem-dense MuiListItem-gutters"
     disabled={false}
   >
     <div
-      className="MuiListItemText-root makeStyles-text-17 MuiListItemText-dense"
+      className="MuiListItemText-root makeStyles-text-22 MuiListItemText-dense"
     >
       <span
         className="MuiTypography-root MuiListItemText-primary MuiTypography-body2 MuiTypography-displayBlock"
@@ -8820,13 +8924,19 @@ exports[`Storyshots SearchField Default 1`] = `
 <div
   className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
 >
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined"
+    data-shrink={true}
+  >
+    Movie title
+  </label>
   <div
     className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
     onClick={[Function]}
   >
     <input
       aria-invalid={false}
-      autoFocus={false}
+      autoFocus={true}
       className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
       disabled={false}
       onAnimationStart={[Function]}
@@ -8842,28 +8952,14 @@ exports[`Storyshots SearchField Default 1`] = `
     />
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-36 MuiOutlinedInput-notchedOutline"
-      style={
-        Object {
-          "paddingLeft": 8,
-        }
-      }
+      className="PrivateNotchedOutline-root-41 MuiOutlinedInput-notchedOutline"
     >
       <legend
-        className="PrivateNotchedOutline-legend-37"
-        style={
-          Object {
-            "width": 0.01,
-          }
-        }
+        className="PrivateNotchedOutline-legendLabelled-43 PrivateNotchedOutline-legendNotched-44"
       >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "&#8203;",
-            }
-          }
-        />
+        <span>
+          Movie title
+        </span>
       </legend>
     </fieldset>
   </div>
@@ -8872,14 +8968,14 @@ exports[`Storyshots SearchField Default 1`] = `
 
 exports[`Storyshots SearchHistory Default 1`] = `
 <div
-  className="makeStyles-root-43"
+  className="makeStyles-root-48"
 >
   <span
-    className="MuiTypography-root makeStyles-header-44 MuiTypography-button MuiTypography-colorTextSecondary"
+    className="MuiTypography-root makeStyles-header-49 MuiTypography-button MuiTypography-colorTextSecondary"
   >
     <svg
       aria-hidden={true}
-      className="MuiSvgIcon-root makeStyles-icon-45"
+      className="MuiSvgIcon-root makeStyles-icon-50"
       focusable="false"
       viewBox="0 0 24 24"
     >
@@ -8894,7 +8990,7 @@ exports[`Storyshots SearchHistory Default 1`] = `
 `;
 
 exports[`Storyshots SearchItem Empty 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -8943,11 +9039,11 @@ exports[`Storyshots SearchItem Empty 1`] = `
       
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItem With All Data 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -8982,6 +9078,7 @@ exports[`Storyshots SearchItem With All Data 1`] = `
         }
       >
         <img
+          alt="Star Wars: Episode IV - A New Hope"
           onError={[Function]}
           onLoad={[Function]}
           src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
@@ -9061,11 +9158,11 @@ exports[`Storyshots SearchItem With All Data 1`] = `
       1977 | movie
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItem Without Poster 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -9114,11 +9211,11 @@ exports[`Storyshots SearchItem Without Poster 1`] = `
       1977 | movie
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItem Without Poster 2 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -9167,11 +9264,11 @@ exports[`Storyshots SearchItem Without Poster 2 1`] = `
       
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItem Without Type 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -9206,6 +9303,7 @@ exports[`Storyshots SearchItem Without Type 1`] = `
         }
       >
         <img
+          alt="Star Wars: Episode IV - A New Hope"
           onError={[Function]}
           onLoad={[Function]}
           src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
@@ -9285,11 +9383,11 @@ exports[`Storyshots SearchItem Without Type 1`] = `
       1977
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItem Without Year 1`] = `
-<div
+<li
   aria-disabled={false}
   className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
   onBlur={[Function]}
@@ -9324,6 +9422,7 @@ exports[`Storyshots SearchItem Without Year 1`] = `
         }
       >
         <img
+          alt="Star Wars: Episode IV - A New Hope"
           onError={[Function]}
           onLoad={[Function]}
           src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
@@ -9403,7 +9502,7 @@ exports[`Storyshots SearchItem Without Year 1`] = `
       movie
     </p>
   </div>
-</div>
+</li>
 `;
 
 exports[`Storyshots SearchItemSkeleton Default 1`] = `
@@ -9459,10 +9558,10 @@ exports[`Storyshots SearchItemSkeleton Default 1`] = `
 
 exports[`Storyshots SearchLayout Default 1`] = `
 <div
-  className="makeStyles-root-52"
+  className="makeStyles-root-59"
 >
   <div
-    className="MuiPaper-root makeStyles-searchBar-53 MuiPaper-elevation1 MuiPaper-rounded"
+    className="MuiPaper-root makeStyles-searchBar-60 MuiPaper-elevation1 MuiPaper-rounded"
   >
     <div
       style={
@@ -9475,7 +9574,7 @@ exports[`Storyshots SearchLayout Default 1`] = `
     </div>
   </div>
   <div
-    className="makeStyles-searchResults-54"
+    className="makeStyles-searchResults-61"
   >
     <div
       style={
@@ -9492,10 +9591,10 @@ exports[`Storyshots SearchLayout Default 1`] = `
 
 exports[`Storyshots SearchLayout Long Content 1`] = `
 <div
-  className="makeStyles-root-55"
+  className="makeStyles-root-62"
 >
   <div
-    className="MuiPaper-root makeStyles-searchBar-56 MuiPaper-elevation1 MuiPaper-rounded"
+    className="MuiPaper-root makeStyles-searchBar-63 MuiPaper-elevation1 MuiPaper-rounded"
   >
     <div
       style={
@@ -9508,7 +9607,7 @@ exports[`Storyshots SearchLayout Long Content 1`] = `
     </div>
   </div>
   <div
-    className="makeStyles-searchResults-57"
+    className="makeStyles-searchResults-64"
   >
     <div
       style={
@@ -9824,7 +9923,7 @@ exports[`Storyshots SearchLayout Long Content 1`] = `
 
 exports[`Storyshots SearchList Default 1`] = `
 <ul
-  className="MuiList-root makeStyles-root-40 MuiList-padding"
+  className="MuiList-root makeStyles-root-45 MuiList-padding"
 >
   <li>
     {"Title":"Star Wars: Episode IV - A New Hope","Year":"1977","imdbID":"tt0076759","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"}
@@ -9861,9 +9960,9 @@ exports[`Storyshots SearchList Default 1`] = `
 
 exports[`Storyshots SearchList Render Search Item 1`] = `
 <ul
-  className="MuiList-root makeStyles-root-41 MuiList-padding"
+  className="MuiList-root makeStyles-root-46 MuiList-padding"
 >
-  <div
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -9898,6 +9997,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode IV - A New Hope"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
@@ -9977,8 +10077,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         1977 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10013,6 +10113,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode V - The Empire Strikes Back"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
@@ -10092,8 +10193,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         1980 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10128,6 +10229,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode VI - Return of the Jedi"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
@@ -10207,8 +10309,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         1983 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10243,6 +10345,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode VII - The Force Awakens"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"
@@ -10322,8 +10425,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2015 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10358,6 +10461,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode I - The Phantom Menace"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
@@ -10437,8 +10541,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         1999 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10473,6 +10577,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode III - Revenge of the Sith"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg"
@@ -10552,8 +10657,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2005 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10588,6 +10693,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode II - Attack of the Clones"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
@@ -10667,8 +10773,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2002 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10703,6 +10809,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode VIII - The Last Jedi"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BMjQ1MzcxNjg4N15BMl5BanBnXkFtZTgwNzgwMjY4MzI@._V1_SX300.jpg"
@@ -10782,8 +10889,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2017 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10818,6 +10925,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Rogue One: A Star Wars Story"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg"
@@ -10897,8 +11005,8 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2016 | movie
       </p>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     aria-disabled={false}
     className="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
     onBlur={[Function]}
@@ -10933,6 +11041,7 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
           }
         >
           <img
+            alt="Star Wars: Episode IX - The Rise of Skywalker"
             onError={[Function]}
             onLoad={[Function]}
             src="https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg"
@@ -11012,13 +11121,13 @@ exports[`Storyshots SearchList Render Search Item 1`] = `
         2019 | movie
       </p>
     </div>
-  </div>
+  </li>
 </ul>
 `;
 
 exports[`Storyshots SearchListSkeleton Default 1`] = `
 <ul
-  className="MuiList-root makeStyles-root-42 MuiList-padding"
+  className="MuiList-root makeStyles-root-47 MuiList-padding"
 >
   <li
     className="MuiListItem-root MuiListItem-gutters"
@@ -11169,299 +11278,31 @@ exports[`Storyshots SearchListSkeleton Default 1`] = `
 
 exports[`Storyshots SearchResults Default 1`] = `
 <div
-  className="makeStyles-root-46"
+  className="makeStyles-root-51"
 >
-  <ul
-    className="MuiList-root makeStyles-root-47 MuiList-padding"
+  <div
+    className="makeStyles-root-52"
   >
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root makeStyles-iconRoot-53 makeStyles-iconRoot-54 MuiSvgIcon-colorDisabled"
+      focusable="false"
+      viewBox="0 0 24 24"
     >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+      />
+    </svg>
+    <h6
+      className="MuiTypography-root MuiTypography-subtitle1"
     >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
+      Error occurred!
+    </h6>
+    <h6
+      className="MuiTypography-root MuiTypography-subtitle2"
     >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
-    >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
-    >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-    <li
-      className="MuiListItem-root MuiListItem-gutters"
-      disabled={false}
-    >
-      <div
-        className="MuiListItemAvatar-root"
-      >
-        <span
-          className="MuiSkeleton-root MuiSkeleton-circle MuiSkeleton-pulse"
-          style={
-            Object {
-              "height": 40,
-              "width": 40,
-            }
-          }
-        />
-      </div>
-      <div
-        className="MuiListItemText-root MuiListItemText-multiline"
-      >
-        <span
-          className="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </span>
-        <p
-          className="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap MuiTypography-displayBlock"
-        >
-          <span
-            className="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse"
-            style={
-              Object {
-                "height": undefined,
-                "width": undefined,
-              }
-            }
-          />
-        </p>
-      </div>
-    </li>
-  </ul>
+      No results!
+    </h6>
+  </div>
 </div>
 `;
